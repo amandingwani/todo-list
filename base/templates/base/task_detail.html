@@ -1,0 +1,14 @@
+{% extends 'base/layout.html' %}
+
+{% block body %}
+    {% if task %}
+        <h1>{{task.title}}</h1>
+
+        <p>
+            {{task.description}}
+        </p>
+    {% else %}
+        <p>Task does not exist</p>
+    {% endif %}
+
+{% endblock %}
